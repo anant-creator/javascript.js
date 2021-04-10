@@ -155,29 +155,34 @@
       let score = 6;
       let highScore = 0;
       console.log(secretNumber);
+
+      const printMsg = function (cls, msg) {
+        document.querySelector(cls).textContent = msg;
+      };
+      const msg = ".message";
+
       document.querySelector(".check").addEventListener(
         "click",
         function () {
           const guess = Number(document.querySelector(".guess").value);
           if (!guess) {
-            document.querySelector(".message").textContent = "No Number!";
+            printMsg(msg, "No Number!");
           } else if (guess === secretNumber) {
-            document.querySelector(".number").textContent = secretNumber;
+            printMsg(".number", secretNumber);
             document.querySelector("body").style.backgroundColor = "#60b347";
-            document.querySelector(".message").textContent = `You Win!`;
+            printMsg(msg, "You Win!");
             if (score > highScore) {
               highScore = score;
-              document.querySelector(".highscore").textContent = highScore;
+              printMsg(".highscore", highScore);
             }
           } else if (guess !== secretNumber) {
             if (score > 1) {
-              document.querySelector(".message").textContent =
-                guess > secretNumber ? "Go Lower!" : "Go Higher";
+              printMsg(msg, guess > secretNumber ? "Go Lower!" : "Go Higher");
               score--;
-              document.querySelector(".score").textContent = score;
+              printMsg(".score", score);
             } else {
-              document.querySelector(".message").textContent = `You Lose 😛`;
-              document.querySelector(".number").textContent = secretNumber;
+              printMsg(msg, `You Lose 😛`);
+              printMsg(".number", secretNumber);
             }
           }
         },
@@ -186,13 +191,13 @@
           score = 6;
           secretNumber = Math.trunc(Math.random() * 20) + 1;
           console.log(secretNumber);
-          document.querySelector(".message").textContent = `Start Guessing...`;
+          printMsg(msg, `Start Guessing...`);
 
-          document.querySelector(".number").textContent = `?`;
+          printMsg(".number", `?`);
 
-          document.querySelector(".guess").value = ``;
+          printMsg(".guess", ``);
 
-          document.querySelector(".score").textContent = score;
+          printMsg(".score", score);
 
           document.querySelector("body").style.backgroundColor = `#222`;
         })
