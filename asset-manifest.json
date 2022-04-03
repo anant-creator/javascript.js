@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/anant-creator/practical-react/static/css/main.fee653bb.css",
+    "main.js": "/anant-creator/practical-react/static/js/main.2ed9ec56.js",
+    "static/js/787.fe1675bb.chunk.js": "/anant-creator/practical-react/static/js/787.fe1675bb.chunk.js",
+    "static/media/3.jpg": "/anant-creator/practical-react/static/media/3.e9f1954a42529dfd8fa5.jpg",
+    "static/media/1.jpg": "/anant-creator/practical-react/static/media/1.19b398f70966a1075340.jpg",
+    "static/media/4.jpg": "/anant-creator/practical-react/static/media/4.f72049ee3cb309b52d76.jpg",
+    "static/media/2.jpg": "/anant-creator/practical-react/static/media/2.317a19dab8c5cc2a73d8.jpg",
+    "static/media/5.jpg": "/anant-creator/practical-react/static/media/5.67841edc59a890bffc52.jpg",
+    "static/media/hot.jpg": "/anant-creator/practical-react/static/media/hot.281cd621962d61bbd80d.jpg",
+    "index.html": "/anant-creator/practical-react/index.html",
+    "main.fee653bb.css.map": "/anant-creator/practical-react/static/css/main.fee653bb.css.map",
+    "main.2ed9ec56.js.map": "/anant-creator/practical-react/static/js/main.2ed9ec56.js.map",
+    "787.fe1675bb.chunk.js.map": "/anant-creator/practical-react/static/js/787.fe1675bb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fee653bb.css",
+    "static/js/main.2ed9ec56.js"
+  ]
+}
